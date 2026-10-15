@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A Auto Maia de Sousa vende peças usadas e acessórios para camiões e autocarros e repara motores, caixas de velocidades e diferenciais, na Trofa.">
+    <meta name="theme-color" content="#293b8d">
+    <title>Auto Maia de Sousa | Peças e Reparação de Veículos Pesados</title>
+    <link rel="icon" type="image/png" sizes="256x256" href="assets/favicon.png">
+    <style>
+      :root {
+        color-scheme: light;
+        --blue: #293b8d;
+        --ink: #202535;
+        --muted: #5d6472;
+        --paper: #f5f6fa;
+        --line: #e2e5ee;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.6;
+      }
+
+      .page {
+        width: min(1120px, calc(100% - 40px));
+        margin: 0 auto;
+        padding: 30px 0 56px;
+      }
+
+      .topbar {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 24px;
+      }
+
+      .topbar img {
+        display: block;
+        width: 48px;
+        height: 48px;
+        object-fit: contain;
+      }
+
+      .topbar-name {
+        color: var(--blue);
+        font-size: 1rem;
+        font-weight: 750;
+        letter-spacing: .015em;
+      }
+
+      main {
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        background: #fff;
+        box-shadow: 0 18px 54px rgb(31 42 82 / 8%);
+      }
+
+      .intro {
+        display: grid;
+        grid-template-columns: 1.25fr .75fr;
+        align-items: center;
+        gap: 44px;
+        padding: clamp(32px, 7vw, 76px);
+        background: linear-gradient(120deg, #f0f2fb 0%, #fff 72%);
+      }
+
+      .eyebrow {
+        margin: 0 0 12px;
+        color: var(--blue);
+        font-size: .78rem;
+        font-weight: 750;
+        letter-spacing: .14em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        max-width: 620px;
+        margin: 0;
+        color: var(--blue);
+        font-size: clamp(2.45rem, 6vw, 4.6rem);
+        letter-spacing: -.055em;
+        line-height: 1.04;
+      }
+
+      .description {
+        max-width: 590px;
+        margin: 22px 0 0;
+        color: var(--muted);
+        font-size: clamp(1rem, 1.8vw, 1.18rem);
+      }
+
+      .logo-card {
+        display: grid;
+        min-height: 260px;
+        place-items: center;
+        padding: 25px;
+        border: 1px solid #edf0f6;
+        border-radius: 18px;
+        background: #fff;
+      }
+
+      .logo-card img {
+        display: block;
+        width: min(100%, 250px);
+        height: auto;
+      }
+
+      .location {
+        display: grid;
+        grid-template-columns: .72fr 1.28fr;
+        gap: 34px;
+        align-items: stretch;
+        padding: clamp(28px, 5vw, 54px);
+      }
+
+      .location h2 {
+        margin: 0 0 12px;
+        color: var(--blue);
+        font-size: 1.35rem;
+        letter-spacing: -.02em;
+      }
+
+      address {
+        color: var(--muted);
+        font-size: 1.05rem;
+        font-style: normal;
+      }
+
+      .map-link {
+        display: inline-block;
+        margin-top: 18px;
+        color: var(--blue);
+        font-size: .92rem;
+        font-weight: 700;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 4px;
+      }
+
+      .map-frame {
+        width: 100%;
+        height: 300px;
+        border: 0;
+        border-radius: 14px;
+        background: #e9ebf1;
+      }
+
+      @media (max-width: 720px) {
+        .page { width: min(540px, calc(100% - 24px)); padding-top: 16px; }
+        .intro, .location { grid-template-columns: 1fr; }
+        .intro { gap: 28px; }
+        .logo-card { min-height: 190px; }
+        .logo-card img { width: 175px; }
+        .location { gap: 22px; }
+        .map-frame { height: 240px; }
+      }
+
+      @media (max-width: 400px) {
+        .page { width: calc(100% - 20px); padding-top: 12px; }
+        .topbar { gap: 10px; margin-bottom: 14px; }
+        .topbar img { width: 42px; height: 42px; }
+        .intro { gap: 22px; padding: 28px 22px; }
+        h1 { font-size: clamp(2.1rem, 10vw, 2.65rem); }
+        .eyebrow { font-size: .68rem; letter-spacing: .1em; }
+        .description { margin-top: 16px; font-size: 1rem; }
+        .logo-card { min-height: 170px; padding: 18px; }
+        .location { gap: 18px; padding: 26px 22px; }
+        .map-frame { height: 220px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="topbar">
+        <img src="assets/auto-maia-de-sousa-logo.png" alt="">
+        <span class="topbar-name">Auto Maia de Sousa</span>
+      </header>
+
+      <main>
+        <section class="intro" aria-labelledby="company-name">
+          <div>
+            <p class="eyebrow">Ao serviço dos veículos pesados desde 1986</p>
+            <h1 id="company-name">Auto Maia de Sousa</h1>
+            <p class="description">Empresa familiar portuguesa, com sede na Trofa, dedicada à venda de peças usadas e acessórios para camiões e autocarros e à reparação especializada de motores, caixas de velocidades e diferenciais.</p>
+          </div>
+          <div class="logo-card">
+            <img src="assets/auto-maia-de-sousa-logo.png" alt="">
+          </div>
+        </section>
+
+        <section class="location" aria-labelledby="location-heading">
+          <div>
+            <h2 id="location-heading">Visite-nos na Trofa</h2>
+            <address>
+              Zona Industrial da Carriça, n.º 106<br>
+              4745-312 Muro<br>
+              Trofa, Portugal
+            </address>
+            <a class="map-link" href="https://maps.google.com/?q=41.284786,-8.594578" target="_blank" rel="noopener noreferrer">Abrir no Google Maps&nbsp; ↗</a>
+          </div>
+          <iframe
+            class="map-frame"
+            title="Mapa da Auto Maia de Sousa, na Trofa, Portugal"
+            src="https://maps.google.com/maps?q=41.284786,-8.594578&amp;z=15&amp;output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
